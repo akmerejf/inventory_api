@@ -1,0 +1,97 @@
+# Logfile created on 2017-09-25 23:45:28 -0300 by logger.rb/56815
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-09-25 23:45:28 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [36e63a0b] Running [ -d ~/.rvm ] as andirobauser@andiroba-server
+ DEBUG [36e63a0b] Command: [ -d ~/.rvm ]
+ DEBUG [36e63a0b] Finished in 1.885 seconds with exit status 0 (successful).
+ DEBUG [6b51eecf] Running ~/.rvm/bin/rvm version as andirobauser@andiroba-server
+ DEBUG [6b51eecf] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm version )
+ DEBUG [6b51eecf] 	rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [6b51eecf] 	
+ DEBUG [6b51eecf] Finished in 0.628 seconds with exit status 0 (successful).
+ DEBUG [b41eeda7] Running ~/.rvm/bin/rvm current as andirobauser@andiroba-server
+ DEBUG [b41eeda7] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm current )
+ DEBUG [b41eeda7] 	ruby-2.4.1
+ DEBUG [b41eeda7] 	
+ DEBUG [b41eeda7] Finished in 0.557 seconds with exit status 0 (successful).
+ DEBUG [91610253] Running ~/.rvm/bin/rvm default do ruby --version as andirobauser@andiroba-server
+ DEBUG [91610253] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm default do ruby --version )
+ DEBUG [91610253] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [91610253] 	
+ DEBUG [91610253] Finished in 0.792 seconds with exit status 0 (successful).
+  INFO [6bcd1833] Running /usr/bin/env mkdir -p /tmp as andirobauser@andiroba-server
+ DEBUG [6bcd1833] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /tmp )
+  INFO [6bcd1833] Finished in 0.315 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh 100.0%
+  INFO [b5430981] Running /usr/bin/env chmod 700 /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh as andirobauser@andiroba-server
+ DEBUG [b5430981] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env chmod 700 /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh )
+  INFO [b5430981] Finished in 0.311 seconds with exit status 0 (successful).
+  INFO [38967415] Running /usr/bin/env git ls-remote git@github.com:akmerejf/inventory_api.git HEAD as andirobauser@andiroba-server
+ DEBUG [38967415] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-INVENTORY_API-production-supanonymous.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/inventory_api.git HEAD )
+ DEBUG [38967415] 	Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+ DEBUG [38967415] 	
+ DEBUG [38967415] 	7f92c546865497ba21f6c58bdc34381717752698
+ DEBUG [38967415] 		HEAD
+  INFO [38967415] Finished in 1.071 seconds with exit status 0 (successful).
+  INFO [e6afee84] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared /home/andirobauser/inventory/releases as andirobauser@andiroba-server
+ DEBUG [e6afee84] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared /home/andirobauser/inventory/releases )
+  INFO [e6afee84] Finished in 0.462 seconds with exit status 0 (successful).
+  INFO [e3e0a9d2] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/log /home/andirobauser/inventory/shared/tmp/pids /home/andirobauser/inventory/shared/tmp/cache /home/andirobauser/inventory/shared/tmp/sockets /home/andirobauser/inventory/shared/vendor/bundle /home/andirobauser/inventory/shared/public/system /home/andirobauser/inventory/shared/public/uploads as andirobauser@andiroba-server
+ DEBUG [e3e0a9d2] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/log /home/andirobauser/inventory/shared/tmp/pids /home/andirobauser/inventory/shared/tmp/cache /home/andirobauser/inventory/shared/tmp/sockets /home/andirobauser/inventory/shared/vendor/bundle /home/andirobauser/inventory/shared/public/system /home/andirobauser/inventory/shared/public/uploads )
+  INFO [e3e0a9d2] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO [04d4e89f] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/config as andirobauser@andiroba-server
+ DEBUG [04d4e89f] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/config )
+  INFO [04d4e89f] Finished in 0.315 seconds with exit status 0 (successful).
+ DEBUG [fc08e93e] Running [ -f /home/andirobauser/inventory/shared/config/mongoid.yml ] as andirobauser@andiroba-server
+ DEBUG [fc08e93e] Command: [ -f /home/andirobauser/inventory/shared/config/mongoid.yml ]
+ DEBUG [fc08e93e] Finished in 0.317 seconds with exit status 1 (failed).
+ ERROR linked file /home/andirobauser/inventory/shared/config/mongoid.yml does not exist on andiroba-server
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-09-25 23:54:57 -0300 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0d838286] Running [ -d ~/.rvm ] as andirobauser@andiroba-server
+ DEBUG [0d838286] Command: [ -d ~/.rvm ]
+ DEBUG [0d838286] Finished in 1.846 seconds with exit status 0 (successful).
+ DEBUG [dd48b7a9] Running ~/.rvm/bin/rvm version as andirobauser@andiroba-server
+ DEBUG [dd48b7a9] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm version )
+ DEBUG [dd48b7a9] 	rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [dd48b7a9] 	
+ DEBUG [dd48b7a9] Finished in 0.636 seconds with exit status 0 (successful).
+ DEBUG [75cf25c8] Running ~/.rvm/bin/rvm current as andirobauser@andiroba-server
+ DEBUG [75cf25c8] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm current )
+ DEBUG [75cf25c8] 	ruby-2.4.1
+ DEBUG [75cf25c8] 	
+ DEBUG [75cf25c8] Finished in 0.551 seconds with exit status 0 (successful).
+ DEBUG [951a561e] Running ~/.rvm/bin/rvm default do ruby --version as andirobauser@andiroba-server
+ DEBUG [951a561e] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; ~/.rvm/bin/rvm default do ruby --version )
+ DEBUG [951a561e] 	ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
+ DEBUG [951a561e] 	
+ DEBUG [951a561e] Finished in 0.759 seconds with exit status 0 (successful).
+  INFO [75deb776] Running /usr/bin/env mkdir -p /tmp as andirobauser@andiroba-server
+ DEBUG [75deb776] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /tmp )
+  INFO [75deb776] Finished in 0.330 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh 0.0%
+  INFO Uploading /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh 100.0%
+  INFO [e5a03a1e] Running /usr/bin/env chmod 700 /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh as andirobauser@andiroba-server
+ DEBUG [e5a03a1e] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env chmod 700 /tmp/git-ssh-INVENTORY_API-production-supanonymous.sh )
+  INFO [e5a03a1e] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO [141b2085] Running /usr/bin/env git ls-remote git@github.com:akmerejf/inventory_api.git HEAD as andirobauser@andiroba-server
+ DEBUG [141b2085] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-INVENTORY_API-production-supanonymous.sh" ; /usr/bin/env git ls-remote git@github.com:akmerejf/inventory_api.git HEAD )
+ DEBUG [141b2085] 	7f92c546865497ba21f6c58bdc34381717752698
+ DEBUG [141b2085] 		HEAD
+  INFO [141b2085] Finished in 3.125 seconds with exit status 0 (successful).
+  INFO [b3aa713e] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared /home/andirobauser/inventory/releases as andirobauser@andiroba-server
+ DEBUG [b3aa713e] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared /home/andirobauser/inventory/releases )
+  INFO [b3aa713e] Finished in 0.314 seconds with exit status 0 (successful).
+  INFO [f1ff1919] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/log /home/andirobauser/inventory/shared/tmp/pids /home/andirobauser/inventory/shared/tmp/cache /home/andirobauser/inventory/shared/tmp/sockets /home/andirobauser/inventory/shared/vendor/bundle /home/andirobauser/inventory/shared/public/system /home/andirobauser/inventory/shared/public/uploads as andirobauser@andiroba-server
+ DEBUG [f1ff1919] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/log /home/andirobauser/inventory/shared/tmp/pids /home/andirobauser/inventory/shared/tmp/cache /home/andirobauser/inventory/shared/tmp/sockets /home/andirobauser/inventory/shared/vendor/bundle /home/andirobauser/inventory/shared/public/system /home/andirobauser/inventory/shared/public/uploads )
+  INFO [f1ff1919] Finished in 0.313 seconds with exit status 0 (successful).
+  INFO [101e8c67] Running /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/config as andirobauser@andiroba-server
+ DEBUG [101e8c67] Command: ( export PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bin:/home/supanonymous/.asdf/$PATH" RUBY_VERSION="ruby-2.4.1" GEM_HOME="/home/supanonymous/.asdf/installs/ruby/2.4.1" GEM_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1" BUNDLE_PATH="/home/supanonymous/.asdf/installs/ruby/2.4.1/bundler" ; /usr/bin/env mkdir -p /home/andirobauser/inventory/shared/config )
+  INFO [101e8c67] Finished in 0.315 seconds with exit status 0 (successful).
+ DEBUG [d078507b] Running [ -f /home/andirobauser/inventory/shared/config/mongoid.yml ] as andirobauser@andiroba-server
+ DEBUG [d078507b] Command: [ -f /home/andirobauser/inventory/shared/config/mongoid.yml ]
+ DEBUG [d078507b] Finished in 0.309 seconds with exit status 1 (failed).
+ ERROR linked file /home/andirobauser/inventory/shared/config/mongoid.yml does not exist on andiroba-server
